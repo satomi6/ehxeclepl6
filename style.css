@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://s-modern.com/wp/wp-content/uploads/2023/10/illust_eyecatch.png'); /* 背景画像を設定 */
+    background-size: cover; /* 画像を画面全体にフィットさせる */
+    background-position: center 10%; /* 画像を中央で縦方向に10%下に配置する */
+    background-repeat: no-repeat; /* 画像の繰り返しを無効にする */
+}
+header {
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #00ff00; /* 緑色 */
+    display: flex;
+    align-items: center;
+}
+header p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #ccc;
+    text-align: right;
+}
+.container {
+    padding: 20px;
+}
+.list-container ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.list-container ul li {
+    background-color: #f4f4f4;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    flex: 1;
+    text-align: center;
+    cursor: pointer; /* クリック可能にする */
+    transition: background-color 0.3s ease, color 0.3s ease; /* スムーズなトランジションを追加 */
+}
+.list-container ul li:hover {
+    background-color: #e0e0e0; /* ホバー時の背景色 */
+    color: #007BFF; /* ホバー時の文字色 */
+    border-color: #007BFF; /* ホバー時のボーダー色 */
+}
+.video-container {
+    display: none; /* 初期状態では非表示 */
+    text-align: center;
+    margin-top: 20px; /* 動画コンテナの上部マージンを調整 */
+}
+.video-container iframe {
+    width: 90%; /* 動画の幅を90%に設定 */
+    max-width: 1200px; /* 最大幅を1200pxに設定 */
+    height: 600px; /* 高さを600pxに設定 */
+    border: none; /* ボーダーを削除 */
+}
